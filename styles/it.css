@@ -1,0 +1,194 @@
+*{
+    font-family: 'Trebuchet MS';
+}
+.gs_nav{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0px 1px 10px #999;
+    margin-bottom: 20px;
+}
+.navbar-right{
+    padding-top: 10px;
+}
+.account{
+    display: none;
+}
+.but{
+    background-color: #00233F;
+}
+.but span{
+    color: white;
+}
+.account{
+    display:none;
+}
+.head{
+    display: none;
+}
+.logo:hover{
+    text-decoration: none;
+}
+.tools{
+    border: 2px solid #ddd;
+    padding: 0;
+}
+.opt{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.opt li{
+    text-align: center;
+}
+.opt li a {
+    display: block;
+    color: #00233F;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    border-top: 2px solid #ddd;
+}
+.opt li a:hover{
+    background-color:#00233F;
+    color: white;
+}
+.opt .active a{
+    background-color:#00233F;
+    color: white;
+}
+.im_pick{
+    width: 100%;
+    height: 200px;
+    border: 3px dashed #ddd;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+.im_pick_over{
+    border-style: solid;
+}
+.im_pick > .dz_input{
+    display: none;
+}
+.gen{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #ddd;
+    color: #00233F;
+    border-radius: 20px;
+    width: 100%;
+    border: 3px solid #00233F;
+    display: none;
+}
+.gen:hover{
+
+    background-color:#00233F ;
+    color:white;
+    border: 3px solid #00233F;
+}
+.modal-header{
+    background-color: #00233F;
+}
+.gs_footer{
+    background-color: #1A1818;
+    padding-top: 20px;
+}
+.foot_notes{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.foot_notes li{
+    padding-top: 10px;
+}
+.foot_notes a{
+    color: #8F8787;
+}
+.foot_notes a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.mob_opt{
+    background-color: #00233F;
+    display: none;
+}
+
+.mob_opt a:hover{
+    background-color: #A1D0FF;
+}
+
+.bottom_footer{
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(14, 12, 12);
+}
+.bottom_footer p {
+    font-size: 15px;
+    color: white;
+    margin-top: 7px;
+}
+@media screen and (max-width:768px)
+{
+    .dis{
+        display: none;
+    }
+    .plabel1, .plabel2{
+        font-size:12px;
+    }
+    .tools{
+        display: none;
+    }
+    .head{
+        display: inline;
+        color: #00233F;
+    }
+    .gs_nav{
+        margin-bottom: 0;
+    }
+    .account{
+        display: inline;
+    }
+    .mob_opt{
+        display: block;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .dis{
+        display: none;
+    }
+    .plabel1, .plabel2{
+        font-size:12px;
+    }
+    .tools{
+        display: none;
+    }
+    .head{
+        display: inline;
+        color: #00233F;
+    }
+    .gs_nav{
+        margin-bottom: 0;
+    }
+    .account{
+        display: inline;
+    }
+    .mob_opt{
+        display: block;
+    }
+}
+

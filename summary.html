@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GS | Summarizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles\sum.css">
+    <script src="scripts\summ.js"></script>
+</head>
+<body>
+    <div class="gs_nav">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-10">
+                        <a href="#" style="font-size: 2em; color:#00233F;" class="logo">GRAM</a>
+                        <a href="#" style="font-size: 2em; color: white; background-color: #00233F;" class="logo">SUMM</a>
+                    </div>
+                    <div class="col-sm-6 col-xs-2 text-right">
+                        <div class="navbar-right">
+                            <a href="#" class=" dis" style="color: black;"><span class="glyphicon glyphicon-user"></span> Account</a>
+                            <a href="#" class=" account" style="color: black;"><span class="glyphicon glyphicon-user"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mob_opt">
+        <div class="row">
+            <div class="col-xs-4 text-center">
+                <a href="#" style="color: white; display: block; padding: 10px;" data-toggle="tooltip" data-title="Grammar and Spell Check"><span class="glyphicon glyphicon-text-color"></span></a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a href="#" style="color: white; display: block; padding: 10px;" data-toggle="tooltip" data-title="Image to Text Conversion"><span class="glyphicon glyphicon-copy"></span></a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a href="#" style="color: white; display: block; padding: 10px;" data-toggle="tooltip" data-title="Sentence Paraphrasing"><span class="glyphicon glyphicon-duplicate"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="head text-center">
+        <h1>Extractive Summary</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 tools">
+                <ul class="opt">
+                    <li><a href="#">Grammar and Spell Check</a></li>
+                    <li class="active"><a href="#">Extractive Summary</a></li>
+                    <li><a href="imagetotext.html">Image to Text Conversion</a></li>
+                    <li><a href="#">Sentence Paraphrasing</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-10 interface">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <p class="plabel1"><i>Only argumentative texts</i></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 text-right">
+                        <p class="plabel2"><i>Word Count : 0000</i></p>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" id="text" rows="8" id="text"></textarea>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="col-sm-1">
+                                <p style="margin-top: 12px; text-align: right;" id="per_label">Size:10%</p>
+                            </div>
+                            <div class="col-sm-11">
+                                <div class="range-slider">
+                                    <input type="range" value="10" min="10" max="100">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-2">
+                            <input type="submit" id="gen" type="button" value="Generate"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="summ">
+                    <h3><i>Summary</i></h3>
+                    <div class="form-group">
+                        <textarea class="form-control" id="text" rows="10" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="gs_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="Images\Logo finalll.png" alt="Logo" class="img-responsive dis" style="margin-top: 30px;">
+                </div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3 class="text-center" style="color: white;">Company</h3>
+                            <ul class="foot_notes">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 class="text-center" style="color: white;">Services</h3>
+                            <ul class="foot_notes">
+                                <li><a href="#">API</a></li>
+                                <li><a href="#">GS for Business</a></li>
+                                <li><a href="#">GS for School</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 class="text-center" style="color: white;">Support</h3>
+                            <ul class="foot_notes">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <p>Designed and Developed by SBS</p>
+    </div>
+</body>
+</html>

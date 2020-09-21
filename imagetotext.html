@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GS | Image to Text Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles\it.css">
+    <script src="scripts\it.js"></script>
+</head>
+<body>
+    <div class="gs_nav">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-10">
+                        <a href="#" style="font-size: 2em; color:#00233F;" class="logo">GRAM</a>
+                        <a href="#" style="font-size: 2em; color: white; background-color: #00233F;" class="logo">SUMM</a>
+                    </div>
+                    <div class="col-sm-6 col-xs-2 text-right">
+                        <div class="navbar-right">
+                            <a href="#" class=" dis" style="color: black;"><span class="glyphicon glyphicon-user"></span> Account</a>
+                            <a href="#" class=" account" style="color: black;"><span class="glyphicon glyphicon-user"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mob_opt">
+        <div class="row">
+            <div class="col-xs-4 text-center">
+                <a href="#" style="color: white; display: block; padding: 10px;" data-toggle="tooltip" data-title="Grammar and Spell Check"><span class="glyphicon glyphicon-text-color"></span></a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a href="#" style="color: white; display: block; padding: 10px;" data-toggle="tooltip" data-title="Extractive Summary"><span class="glyphicon glyphicon-copy"></span></a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a href="#" style="color: white; display: block; padding: 10px;" data-toggle="tooltip" data-title="Sentence Paraphrasing"><span class="glyphicon glyphicon-duplicate"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="head text-center">
+        <h1>Image to Text</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 tools">
+                <ul class="opt">
+                    <li><a href="#">Grammar and Spell Check</a></li>
+                    <li><a href="summary.html">Extractive Summary</a></li>
+                    <li class="active"><a href="#">Image to Text Conversion</a></li>
+                    <li><a href="#">Sentence Paraphrasing</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-10 interface">
+                <div class="im_pick">
+                    <span class="dropzone_text" id="dz_txt">Drop your file here or Click to Upload</span>
+                    <input type="file" name="myfile" class="dz_input">
+                </div>
+                <div class="progress" style="margin-top: 10px; border: 2px solid #00233F;">
+                    <div class="progress-bar" role="progressbar" style="width: 0%; background-color: #00233F;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progress"></div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-sm-6 col-xs-6">
+                        <input type="button" value="Preview" class="gen" data-toggle="modal" data-target="#previewModal">
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <input type="submit" value="Convert" class="gen">
+                    </div>
+                </div>
+
+                <!--Modal-->
+                <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="PreviewModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title" id="exampleModalLabel" style="color: white;">Preview</h2>
+                        </div>
+                        <div class="modal-body">
+                          <img src="" alt="" class="img-responsive" id="preimg" style="margin: auto">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="ct">
+                    <h3><i>Converted Text</i></h3>
+                    <div class="form-group">
+                        <textarea class="form-control" id="text" rows="10" readonly></textarea>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div class="gs_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="Images\Logo finalll.png" alt="Logo" class="img-responsive dis" style="margin-top: 30px;">
+                </div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3 class="text-center" style="color: white;">Company</h3>
+                            <ul class="foot_notes">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 class="text-center" style="color: white;">Services</h3>
+                            <ul class="foot_notes">
+                                <li><a href="#">API</a></li>
+                                <li><a href="#">GS for Business</a></li>
+                                <li><a href="#">GS for School</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 class="text-center" style="color: white;">Support</h3>
+                            <ul class="foot_notes">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <p>Designed and Developed by SBS</p>
+    </div>
+</body>
+</html>
